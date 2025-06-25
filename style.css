@@ -488,6 +488,10 @@ header {
   min-height: 100vh;
 }
 
+#consultations h2 {
+  color: var(--secondary);
+}
+
 .consultations-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -804,5 +808,18 @@ footer {
   }
   .social-links {
     gap: 10px;
+  }
+  #school,
+  #consultations {
+    background: #87746c;
+    background: linear-gradient(
+      0deg,
+      rgba(135, 116, 108, 1) 0%,
+      rgba(76, 107, 97, 1) 100%
+    );
+  }
+  #school::after,
+  #consultations::after {
+    background-image: none;
   }
 }
